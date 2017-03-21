@@ -1,0 +1,30 @@
+<h1 class="page-header">{{ vm.title }}</h1>
+<div class="list-group">
+  <a href="#!/detail/{{ movie.id }}" class="list-group-item" ng-repeat="movie in movies">
+    <span class="badge">{{  }}</span>
+    <div class="media">
+      <div class="media-left" href="#">
+        <img ng-src="{{ movie.images.small }}" alt="">
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading">{{ movie.title }}</h3>
+        <p>类型：{{  }}</p>
+        <p>导演：韩寒</span></p>
+        <p>主演：韩寒、邓超</span></p>
+      </div>
+    </div>
+  </a>
+</div>
+<div class="loader">
+  <i class="face"></i>
+  <i class="balls"></i>
+  <i class="balls"></i>
+  <i class="balls"></i>
+</div>
+<p>总共：50条记录，第1/10页</p>
+<nav>
+  <ul class="pager">
+    <li><a>上一页</a></li>
+    <li><a>下一页</a></li>
+  </ul>
+</nav>
